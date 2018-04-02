@@ -1,21 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @todo_list.title %>
-</p>
+<h2><%= @todo_list.title %></h2>
+<p><%= @todo_list.description %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @todo_list.description %>
-</p>
+<table>
+    <tbody>
+      <%= render @todo_list.todo_items %>
+    </tbody>
+</table>
 
-<div id="todo_items_wrapper">
-  <%= render @todo_list.todo_items %>
-  <div id="form">
-    <%= render "todo_items/form" %>
-  </div>
+<br>
+<hr>
+<br>
+
+<table>
+  <tbody>
+    <div class="form-group">
+      <%= render "todo_items/form" %>
+    </div>
+  </tbody>
+</table>
+
+<div class="links">
+  <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+  <%= link_to 'Back', todo_lists_path %> |
+  <%= link_to 'Delete', @todo_list, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
-
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
