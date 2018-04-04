@@ -1,24 +1,11 @@
-# README
+## Index
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![index page](https://imgur.com/a/dthKZ)
 
-Things you may want to cover:
+## New Todo_list page
 
-* Ruby version
+![New todo_list page](https://imgur.com/a/EnFc3)
 
-* System dependencies
+## New Todo_items page
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![New todo_items page](https://imgur.com/a/IEANE)
